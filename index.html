@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Interstitial Test</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Please select a car color</h1>
+  
+    <div class="container--options">
+      <button class="container--option option__black" id="black">BLACK</button>
+      <button class="container--option option__red" id="red">RED</button>
+      <button class="container--option option__blue" id="blue">BLUE</button>
+    </div>
+
+    <!-- Modal HTML (hidden by default) -->
+    <div class="modal hidden">
+      <div class="modal--container">
+        <h2>ARE YOU SURE?</h2>
+        <p class="modal--subtext">
+          You want to leave the site to see the <span id="carColor"></span> car?
+        </p>
+        <div class="modal--confirmation">
+          <div class="modal--img"></div>
+          <div class="modal--buttons">
+            <button class="modal--button button--yes" id="yes">YES</button>
+            <button class="modal--button button--no" id="no">NO</button>
+          </div>
+        </div>
+        <p><span>*Please remember to wear your seatbelt</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts for handling modal -->
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+
+
+</html>
